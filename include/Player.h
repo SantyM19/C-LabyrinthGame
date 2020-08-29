@@ -7,9 +7,8 @@ class Player
     public:
         Player();
         void CallInput();
-
-    protected:
         int x, y;
+    protected:
     private:
 };
 

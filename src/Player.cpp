@@ -17,11 +17,11 @@ void Player::CallInput()
         switch(UserInput)
         {
         case 'w':
-            y = y + 1;
+            y = y - 1;
             cout << "El jugador se mueve arriba" << endl;
             break;
         case 's':
-            y = y - 1;
+            y = y + 1;
             cout << "El jugador se mueve abajo" << endl;
             break;
         case 'd':
