@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1598672644 source:c:\users\angie tellez\documents\c++\laberynthgame\main.cpp
+	<iostream>
+	"Player.h"
+
+1598672330 c:\users\angie tellez\documents\c++\laberynthgame\include\player.h
+
