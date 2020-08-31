@@ -11,10 +11,12 @@ int main()
     GameMap Map;
     Player Hero;
 
-    cout << "Hello we" << endl;
+    Map.DrawIntro();
+    Map.Draw();
 
     while(isGameOver == false)
         {
+            cout << "Introduce el comando de movimiento 'w', 'a', 's', 'd'" << endl;
             //Aqui es el loop de nuestro juego
             Hero.CallInput();
             //Actualizado de inf heroe a mapa
