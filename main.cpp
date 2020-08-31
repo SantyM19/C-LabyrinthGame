@@ -7,14 +7,13 @@ using namespace std;
 
 int main()
 {
-    bool isGameOver = false;
     GameMap Map;
     Player Hero;
 
     Map.DrawIntro();
     Map.Draw();
 
-    while(isGameOver == false)
+    while(Map.isGameOver == false)
         {
             cout << "Introduce el comando de movimiento 'w', 'a', 's', 'd'" << endl;
             //Aqui es el loop de nuestro juego

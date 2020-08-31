@@ -12,10 +12,13 @@ class GameMap
         MapCell* PlayerCell;
         MapCell cells[15][10];
 
+        void DrawVictory();
         void DrawIntro();
         void Draw();
         // This function get Coordinates Player
         bool SetPlayerCell(int PlayerX,int PlayerY);
+
+        bool isGameOver = false;
 
 
     protected:
