@@ -14,7 +14,7 @@ class GameMap
 
         void Draw();
         // This function get Coordinates Player
-        void SetPlayerCell(int PlayerX,int PlayerY);
+        bool SetPlayerCell(int PlayerX,int PlayerY);
 
 
     protected:

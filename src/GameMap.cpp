@@ -25,12 +25,19 @@ void GameMap::Draw()
 
 //Coordinates Player
 
-void GameMap::SetPlayerCell(int PlayerX,int PlayerY){
-    if (PlayerCell != NULL){
-        PlayerCell->id=0;
+bool GameMap::SetPlayerCell(int PlayerX,int PlayerY){
+    if(cells[PlayerY][PlayerX].IsBlocked()==false){
+        if (PlayerCell != NULL){
+            PlayerCell->id=0;
+        }
+        PlayerCell = &cells[PlayerY][PlayerX];
+        PlayerCell->id='3';
+
+        return true;
     }
-    PlayerCell = &cells[PlayerY][PlayerX];
-    PlayerCell->id='3';
+    else{
+        return false;
+    }
 }
 
 //Load Map From File

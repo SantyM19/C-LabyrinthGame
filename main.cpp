@@ -18,10 +18,14 @@ int main()
             //Aqui es el loop de nuestro juego
             Hero.CallInput();
             //Actualizado de inf heroe a mapa
-            Map.SetPlayerCell(Hero.x, Hero.y);
-
-            //Aqui dibujamos el mapa
-            Map.Draw();
+            if(Map.SetPlayerCell(Hero.x, Hero.y)){
+                //Aqui dibujamos el mapa
+                Map.Draw();
+            }
+            else{
+                Hero.ResetToSafePosition();
+                Map.Draw();
+            }
         }
     return 0;
 }
